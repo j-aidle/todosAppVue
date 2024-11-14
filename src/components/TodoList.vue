@@ -20,8 +20,8 @@
                                     {{ task.text }}
                                 </v-list-item-content>
                                 <v-list-item-action>
-                                    <v-btn small icon @click="removeTask(task.id)">
-                                        <v-icon>mdi-delete</v-icon>
+                                    <v-btn small  @click="removeTask(task.id)" color="error">
+                                        Delete
                                     </v-btn>
                                 </v-list-item-action>
                             </v-list-item>
@@ -35,7 +35,7 @@
                             outlined
                             dense
                         ></v-text-field>
-                        <v-btn color="primary" class="mt-2" block @click="addNewTask">
+                        <v-btn color="info" class="mt-2" block @click="addNewTask">
                             Add Task
                         </v-btn>
                     </v-card-text>
